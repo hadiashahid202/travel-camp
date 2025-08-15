@@ -1,7 +1,1 @@
-{
-  "css.validate": false,
-  "tailwindCSS.emmetCompletions": true,
-  "files.associations": {
-    "*.css": "tailwindcss"
-  }
-}
+{}
