@@ -1,9 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export", // enable static export
-  basePath: "/travel-camp", // replace with your repo name
+  output: "export", // required for static HTML
+  basePath: "/travel-camp", // 👈 must match your repo name
+  assetPrefix: "/travel-camp/",
   images: {
-    unoptimized: true, // required because Next.js image optimization doesn’t work on static hosting
+    unoptimized: true, // required for GitHub Pages
   },
 };
 
