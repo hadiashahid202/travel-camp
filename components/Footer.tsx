@@ -53,7 +53,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="border bg-gray-500" />
+        <div className="border border-gray-300" />
         <p className="text-[14px] font-[400] w-full text-center text-gray-400">
           2025 Hilink | All rights reserved
         </p>
