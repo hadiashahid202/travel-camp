@@ -1,15 +1,10 @@
-// next.config.ts
-import type { NextConfig } from "next";
-
-const isProd = process.env.NODE_ENV === "production";
-
-const nextConfig: NextConfig = {
-  output: "export", // static export for GitHub Pages
-  basePath: isProd ? "/travel-camp" : "",
-  assetPrefix: isProd ? "/travel-camp/" : "",
-  images: { unoptimized: true }, // required if you use next/image on GH Pages
-  // optional but often helpful on GH Pages:
-  // trailingSlash: true,
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: "export", // enable static export
+  basePath: "/travel-camp", // replace with your repo name
+  images: {
+    unoptimized: true, // required because Next.js image optimization doesn’t work on static hosting
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
