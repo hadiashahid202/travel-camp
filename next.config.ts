@@ -1,11 +1,8 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: "export", // required for static HTML
-  basePath: "/travel-camp", // 👈 must match your repo name
-  assetPrefix: "/travel-camp/",
-  images: {
-    unoptimized: true, // required for GitHub Pages
-  },
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  output: "export",
+  images: { unoptimized: true },
 };
 
-module.exports = nextConfig;
+export default nextConfig;
